@@ -1,0 +1,175 @@
+.card-message {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/photo-1585354915817-d07b6539434a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.card-message .main__background {
+  background-color: #8cb3ca2e;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+.card-message.bounceOut {
+  animation: bounceOut 2s linear;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+.main .card {
+  animation: zoomIn 2s linear;
+  box-shadow: 0px 0px 23px 4px #24c799;
+}
+.main img {
+  height: 100%;
+}
+.main .card-title {
+  animation: slideInLeft 2s linear;
+}
+.main .card-text {
+  animation: slideInRight 2s linear;
+}
+
+#header {
+  font-family: Algerian;
+  background-color: #71afa9;
+}
+#header nav img {
+  width: 60%;
+}
+#header ul li {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+#header ul li a {
+  color: #ffffff;
+}
+#header .banner {
+  height: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Content-outer section .card {
+  background-color: #f0efed;
+  color: #736666;
+}
+.Content-outer section .card-title {
+  font-size: 30px !important;
+  font-family: FrederickatheGreat;
+}
+.Content-outer section .card-text {
+  font-family: "Times New Roman", Times, serif;
+}
+.Content-outer section.first-section {
+  /*@media only screen and (max-width: 767.98px) and (min-width: 570.98px) {
+  //     background-color: red !important;
+  //     .grid-second{
+  //         transform: translate(0%, 50%) !important;
+  //         // img{
+  //         //     transform: translate(0%, 50%) !important;
+  //         // }
+  //     }
+  // }
+  // @media only screen and (max-width: 767.98px) and (min-width: 570.98px) {
+  // background-color: red !important;
+  // grid-template-columns: auto;
+  // grid-template-rows: auto auto;
+  // transform: translate(0%, 50%);
+  // display: grid;
+  // grid-template-areas:
+  //     "grid-first grid-finally"
+  //     "grid-second grid-second";
+  // }*/
+  background-color: #e0e0e0;
+}
+.Content-outer section.first-section img {
+  height: auto;
+  width: 100%;
+  box-shadow: 0px 0px 71px 11px #1f1f1f;
+}
+@media only screen and (min-width: 767.98px) {
+  .Content-outer section.first-section {
+    min-height: 100vh;
+  }
+}
+.Content-outer section.first-section .grid-first {
+  grid-area: grid-first;
+}
+.Content-outer section.first-section .gird-second {
+  grid-area: grid-second;
+}
+.Content-outer section.first-section .grid-finally {
+  grid-area: grid-finally;
+}
+.Content-outer section.first-section .card:hover, .Content-outer section.first-section img:hover {
+  transform: scale(1.2);
+}
+.Content-outer section.first-section i {
+  color: #2daae1;
+  background-color: white;
+  border-radius: 50%;
+  border: 1x solid grey;
+  padding: 10px;
+}
+.Content-outer section.second-section img {
+  width: 100%;
+}
+.Content-outer section.second-section .icon-education img {
+  width: 50%;
+  position: absolute;
+  transform: translate(0, -50%);
+}
+.Content-outer section.third-section {
+  display: flex;
+  background-color: #fdfdfc;
+}
+.Content-outer section.third-section .image {
+  width: 50%;
+}
+.Content-outer section.third-section .text-content {
+  width: 50%;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+.Content-outer section.third-section img {
+  width: 100%;
+}
+.Content-outer section.fourth-section {
+  background-image: url("../img/section-f-background.jpg");
+  min-height: 80vh;
+  font-size: 22px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+footer {
+  background-color: #e04732;
+  color: #ffff;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+footer ul li {
+  float: left;
+  padding: 0px 10px 0px 10px;
+  border-right: 1px solid white;
+}
+footer ul li a {
+  color: #ffff;
+  text-decoration: none !important;
+}
+footer ul li a:hover {
+  color: #ffff;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,206 @@
+$time_run_animation: 2s;
+// $screen-sm-min: 768px;
+// $screen-sm-max: 767.98px;
+$tablet: "only screen and (max-width: 767.98px) and (min-width: 570.98px)";
+
+.card-message {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    ),
+    url("../img/photo-1585354915817-d07b6539434a.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  .main__background {
+    background-color: #8cb3ca2e;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+  }
+  &.bounceOut {
+    animation: bounceOut $time_run_animation linear;
+  }
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  .card {
+    animation: zoomIn $time_run_animation linear;
+    box-shadow: 0px 0px 23px 4px rgba(36, 199, 153, 1);
+  }
+  img {
+    height: 100%;
+  }
+  .card-title {
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: slideInLeft $time_run_animation linear;
+  }
+  .card-text {
+    animation: slideInRight $time_run_animation linear;
+  }
+}
+
+#header {
+  font-family: Algerian;
+  background-color: #71afa9;
+  nav {
+    img {
+      width: 60%;
+    }
+  }
+  ul {
+    li {
+      text-transform: uppercase;
+      font-size: 24px;
+      a {
+        color: #ffffff;
+      }
+    }
+  }
+  .banner {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.Content-outer {
+  section {
+    // min-height: calc(100vh - 58px);
+    
+    .card{
+        background-color: #f0efed;
+        color: #736666;
+    }
+    .card-title {
+      font-size: 30px !important;
+      font-family: FrederickatheGreat;
+    }
+    .card-text {
+      font-family: "Times New Roman", Times, serif;
+    }
+    &.first-section {
+      img {
+        height: auto;
+        width: 100%;
+        box-shadow: 0px 0px 71px 11px rgba(31,31,31,1);
+      }
+      @media only screen and (min-width: 767.98px) {
+        min-height: 100vh;
+      }
+      .grid-first {
+        // grid-template-areas: 'grid-first';
+        grid-area: grid-first;
+      }
+      .gird-second {
+        grid-area: grid-second;
+        // transform: translate(0%, 0%) !important;
+        @media #{$tablet} {
+          // transform: translate(0%, 50%) !important;
+        }
+      }
+      .grid-finally {
+        grid-area: grid-finally;
+      }
+      /*@media #{$tablet} {
+      //     background-color: red !important;
+      //     .grid-second{
+      //         transform: translate(0%, 50%) !important;
+      //         // img{
+      //         //     transform: translate(0%, 50%) !important;
+      //         // }
+      //     }
+      // }
+      // @media #{$tablet} {
+      // background-color: red !important;
+      // grid-template-columns: auto;
+      // grid-template-rows: auto auto;
+      // transform: translate(0%, 50%);
+      // display: grid;
+      // grid-template-areas:
+      //     "grid-first grid-finally"
+      //     "grid-second grid-second";
+      // }*/
+      background-color: #e0e0e0;
+      .card:hover, img:hover{
+        transform: scale(1.2);
+      }
+      i{
+        color: #2daae1;
+        background-color: white;
+        border-radius: 50%;
+        border: 1x solid grey;
+        padding:10px;
+      }
+    }
+    &.second-section{
+        img{
+            width: 100%;
+        }
+        .icon-education{
+            img{
+                width: 50%;
+                position: absolute;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+    &.third-section{
+      display: flex;
+      // @media only screen and (min-width: 800.98px) {
+      //   min-height: 80vh;
+      // }
+      background-color: #fdfdfc;
+      .image{
+        width: 50%;
+        // float: left;
+      }
+      .text-content{
+        width: 50%;
+        // float: right;
+        font-size: 22px;
+        font-family: 'Times New Roman', Times, serif;
+        
+      }
+      img{
+        width: 100%;
+      }
+    }
+    &.fourth-section{
+      background-image: url("../img/section-f-background.jpg");
+      min-height: 80vh;
+      font-size: 22px;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  }
+}
+footer{
+  background-color: #e04732;
+  color: #ffff;
+  ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li{
+      float: left;
+      padding: 0px 10px 0px 10px;
+      border-right: 1px solid white;
+      a{
+        color: #ffff;
+        text-decoration: none !important;
+        &:hover{
+          color: #ffff;
+        }
+      }
+    }
+  }
+}
